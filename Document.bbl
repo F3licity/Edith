@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{cherry2011saccharomyces}
+J~Michael Cherry, Eurie~L Hong, Craig Amundsen, Rama Balakrishnan, Gail
+  Binkley, Esther~T Chan, Karen~R Christie, Maria~C Costanzo, Selina~S Dwight,
+  Stacia~R Engel, et~al.
+\newblock Saccharomyces genome database: the genomics resource of budding
+  yeast.
+\newblock {\em Nucleic acids research}, page gkr1029, 2011.
+
+\bibitem{ciandrini2013ribosome}
+Luca Ciandrini, Ian Stansfield, and M~Carmen Romano.
+\newblock Ribosome traffic on mrnas maps to gene ontology: genome-wide
+  quantification of translation initiation rates and polysome size regulation.
+\newblock {\em PLoS computational biology}, 9(1):e1002866, 2013.
+
+\bibitem{Gritsenko2014}
+Alexey~A Gritsenko, Marc Hulsman, Marcel J~T Reinders, and De~Ridder.
+\newblock {An unbiased quantitative model of S. cerevisiae protein translation
+  derived from ribosome profiling data}.
+\newblock pages 1--7, 2014.
+
+\bibitem{nagalakshmi2008transcriptional}
+Ugrappa Nagalakshmi, Zhong Wang, Karl Waern, Chong Shou, Debasish Raha, Mark
+  Gerstein, and Michael Snyder.
+\newblock The transcriptional landscape of the yeast genome defined by rna
+  sequencing.
+\newblock {\em Science}, 320(5881):1344--1349, 2008.
+
+\bibitem{yassour2009ab}
+Moran Yassour, Tommy Kaplan, Hunter~B Fraser, Joshua~Z Levin, Jenna Pfiffner,
+  Xian Adiconis, Gary Schroth, Shujun Luo, Irina Khrebtukova, Andreas Gnirke,
+  et~al.
+\newblock Ab initio construction of a eukaryotic transcriptome by massively
+  parallel mrna sequencing.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  106(9):3264—3269, 2009.
+
+\end{thebibliography}

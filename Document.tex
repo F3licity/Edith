@@ -1,0 +1,109 @@
+% Thesis 
+
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{latexsym}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{subcaption}
+
+
+\setlength{\textheight}{22cm}
+\setlength{\textwidth}{14cm}
+\setlength{\unitlength}{1mm}
+\setlength{\topskip}{2.5truecm}
+\topmargin 260mm \advance \topmargin -\textheight 
+\divide \topmargin by 2 \advance \topmargin -1in 
+\headheight 0pt \headsep 0pt \leftmargin 210mm \advance
+\leftmargin -\textwidth 
+\divide \leftmargin by 2 \advance \leftmargin -1in 
+\oddsidemargin \leftmargin \evensidemargin \leftmargin
+\parindent=0pt
+
+\frenchspacing
+
+
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+
+\author{Eftychia Thomaidou \\
+\small 4182219}
+\title{Thesis Porject}
+\date{\today}
+
+\begin{document}
+\bibliographystyle{plain}
+\maketitle
+
+
+
+\section{Motivation} 
+
+
+The DNA is transcribed to RNA and that translated into a protein. Protein 
+is the actual product of the DNA. How often the RNA is translated or how 
+much protein is produced, is highly related with the Ribosome. The ribosome 
+is the actual 'molecular machine' that commits the action of the translation.
+
+%\medskip
+
+The part of the RNA, that becomes a protein, is called coding sequence. The ribosome binds to the RNA at the RBS (Ribosomal Binding Site). The RBS is located at the 5UTR, which is the untranslated region in front of the coding sequence. That is according to  the traditional way of the translation and doesn't apply in all cases.
+
+Other elements that are located in the 5' Untranslated Region affect the binding of the ribosome and thus the translation. It is known that this is the case, but those elements are unknown or not confirmed, so it is of hight interest to be discovered. 
+
+Aim of this project is to build a regression model, that has as input different features, that can be found in the 5' UTR sequences, and predicts the translation initiation rates. The reason why it is important to do that is dual. To begin with, it is very useful to be able to predict the initiation rates for new sequences and consequently be able to synthesize new sequences with high initiation rate. Additionally, it is of high importance to understand which of the elements, located in the 5' UTR, influence the translation initiation rates and so the translation.
+
+The data of this project are: an aggregation of names of yeast genes and their translation initiation rates. In this model are used the log values of the latter. The algorithm is applied on the data provided by the following papers: \cite{Gritsenko2014} and \cite{ciandrini2013ribosome}.
+
+%\section{Problem}
+
+
+\section{Methodology}
+In order to retrieve more specific information, like the starting and ending position of the 5 UTR of each gene, are used the data provided by \cite{nagalakshmi2008transcriptional} and \cite{yassour2009ab}. A parsing algorithm is used, that reads the two GFF3 files and combines them in an array. From this array are selected only those genes that their initiation rate is known and provided in the first data. With the use of 'start' and 'end' columns of the array is calculated the length of the sequences. The actual sequences are also known and provided by the SGD database \cite{cherry2011saccharomyces}. As it it known there are 16 chromosomes saved in fasta files and one extra named 'chrmt.fsa'. For personal ease is used the numeric way of naming the chromosome files and not the roman. Similarly the last file is named as the 17. 
+Now all the important data are provided and are ready to be used.
+
+In need for features for the regression model is used the length of the sequences. Are used only the sequence that have length < 11bp. 
+
+Features: 
+sequenceLength,
+Afrequency = baseCounter['A']/float(sequenceLength),
+Tfrequency = baseCounter['T']/float(sequenceLength),
+Gfrequency = baseCounter['G']/float(sequenceLength),
+Cfrequency = baseCounter['C']/float(sequenceLength),
+Target:
+Initiation Rates
+
+%\section{Proposal}
+
+
+% \begin{figure}[!ht]
+% \begin{center}
+% \includegraphics[scale=0.8]{bayes.eps}
+% \end{center}
+% \caption{Bayesian network with use of Bioinformatics data sources. One 
+% can see that the nodes may represent different variables coming from 
+% different sources. \label{bayes}}
+% \end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliography{Document}{}
+
+\end{document}
+

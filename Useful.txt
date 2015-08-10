@@ -1,0 +1,803 @@
+~~~Alexey~~~
+with the first 10bp (linear kernel)
+Cross Validation Scores Linear [-12.23145421 -23.3377724   -4.79464803 -13.85251182  -1.63216519]
+Accuracy: -11.17 (+/- 7.59)
+Cross Validation Scores RBF [-11.82170257 -21.95275678  -0.7073064  -13.18052432  -1.62055898]
+Accuracy: -9.86 (+/- 7.91)
+Cross Validation Scores Polynomial [-11.85051492 -22.2368103   -0.48388143 -13.23066825  -1.62353711]
+Accuracy: -9.89 (+/- 8.05)
+Cross Validation Scores sigmoid [-11.77463081 -22.19987175  -0.39037446 -13.30451429  -1.62165986]
+Accuracy: -9.86 (+/- 8.07)
+
+
+with the first 100bp (linear kernel)
+Cross Validation Scores Linear [-11.91827056 -23.03793568  -2.92889332 -13.29506593  -1.62512741]
+Accuracy: -10.56 (+/- 7.79)
+Cross Validation Scores RBF [-12.04943225 -22.96218502  -2.35536551 -13.28264249  -1.63437581]
+Accuracy: -10.46 (+/- 7.88)
+Cross Validation Scores Polynomial [-11.88365419 -22.63776439  -0.66928408 -13.30955398  -1.62228588]
+Accuracy: -10.02 (+/- 8.14)
+Cross Validation Scores sigmoid [-11.77463081 -22.19987175  -0.39037446 -13.30451429  -1.62165986]
+Accuracy: -9.86 (+/- 8.07)
+
+
+
+6/1/2014 - 85 Features
+Cross Validation Linear Scores [-0.29826794 -0.01381977 -0.08681634 -0.06940299 -0.017233  ]
+Accuracy: -0.10 (+/- 0.10)
+MeanAbsoluteError Train: 0.652924804652
+MeanAbsoluteError Test: 0.470161577586
+Prediction of X is  [-10.60674275 -10.64347515 -10.45137785 ...,  -3.80291502  -9.19829806
+  -9.20235627]
+Random Forest score -0.135125048693
+
+
+Cross Validation Linear Scores [-0.36161124 -0.41051279 -0.52476002 -0.24777463 -0.13992817]
+Accuracy: -0.34 (+/- 0.13)
+MeanAbsoluteError Train: 0.279225289764
+MeanAbsoluteError Test: 0.584675573792
+Prediction of X is  [-10.42715733 -10.85604027 -10.53542963 ...,  -3.34223519  -9.3009936
+  -9.24014443]
+Random Forest score -0.139928174587
+
+
+2:-1
+
+Python Array [row, column]
+
+~~~Ciandrini~~~
+Cross Validation Linear Scores [-0.01481617 -0.07278561 -0.16556867 -0.13492437 -0.10154735]
+Accuracy: -0.10 (+/- 0.05)
+MeanAbsoluteError Train: 0.44284800749
+MeanAbsoluteError Test: 0.252653561312
+
+Random Forest score -0.341861823467
+
+
+Random Forest on the sequences as they are (turned into numbers) - Ciandrini
+-0.105895703829
+-0.172386174943
+-0.337355232915
+-0.278115430764
+-0.341347987619
+--------------------------------
+~~Alexey~~first db
+-0.232777309471
+-0.492038046662
+-0.521209613727
+-0.278452517508
+-0.317651034996
+
+
+----------------------------------------------------------------------------------------------------------
+Ciandrini, including Summation, scaled
+Cross Validation Linear Scores [ -5.88094064  -1.91413156 -11.75401034 -11.2002558  -14.81535492]
+Accuracy: -9.11 (+/- 4.61)
+MeanAbsoluteError Train: 0.546094064825
+MeanAbsoluteError Test: 0.719812641667
+
+Cross Validation Linear Scores [ -5.88094064  -1.91413156 -11.75401034 -11.2002558  -14.81535492]
+Accuracy: -9.11 (+/- 4.61)
+MeanAbsoluteError Train: 0.546094064825
+MeanAbsoluteError Test: 0.719812641667
+Prediction of X is  [-0.48106844 -2.85894667 -2.45259758 ...,  1.95730888  1.96690038
+ -0.48106844]
+Random Forest score -0.123423039047
+
+
+
+Cross Validation Linear Scores [  -9.22943972  -52.38380791 -430.65445788 -124.44727501  -53.88273668]
+Accuracy: -134.12 (+/- 152.80)
+MeanAbsoluteError Train: 0.438002423938
+MeanAbsoluteError Test: 1.68943582483
+Random Forest Scores [ -9.00779546  -7.24727845  -6.37997639 -29.26302754  -8.91662784]
+Accuracy: -12.16 (+/- 8.61)
+MeanAbsoluteError Train: 0.241694542937
+MeanAbsoluteError Test: 1.62882075384
+
+#used features summation and -3
+Random Forest Scores [ -9.27680915 -10.99577602  -9.22825884 -35.32208496  -8.8661095 ]
+Accuracy: -14.74 (+/- 10.32)
+MeanAbsoluteError Train: 0.583439127694
+MeanAbsoluteError Test: 1.63335184265
+
+ADDED Minimum Free Energy
+Cross Validation Linear Scores [  -9.22943972  -52.38380791 -430.65445788 -124.44727501  -53.88273668]
+Accuracy: -134.12 (+/- 152.80)
+MeanAbsoluteError Train: 0.438002423938
+MeanAbsoluteError Test: 1.68943582483
+Random Forest Scores [ -9.08022601  -7.4911441   -6.15069825 -29.59974421  -8.9466877 ]
+Accuracy: -12.25 (+/- 8.74)
+MeanAbsoluteError Train: 0.24410335248
+MeanAbsoluteError Test: 1.63216674145
+
+
+
+MFE and SUmmations only as features
+
+Cross Validation Linear Scores [ -8.55805322 -15.11600311  -0.97492413 -29.97488332  -7.02667871]
+Accuracy: -12.33 (+/- 9.90)
+MeanAbsoluteError Train: 0.610253102901
+MeanAbsoluteError Test: 1.46011783362
+Random Forest Scores [ -9.69031761 -23.00092447 -39.79664366 -71.01849397  -9.79990722]
+Accuracy: -30.66 (+/- 23.00)
+MeanAbsoluteError Train: 0.282046570457
+MeanAbsoluteError Test: 1.63330097122
+
+Selected FEatures
+Cross Validation Linear Scores [ -8.38365849 -14.26152698  -6.71644495 -31.61136111  -6.89456942]
+Accuracy: -13.57 (+/- 9.43)
+MeanAbsoluteError Train: 0.593015113947
+MeanAbsoluteError Test: 1.42279103792
+Random Forest Scores [ -9.01664156  -9.26363652 -12.13520546 -34.64085924  -9.12954372]
+Accuracy: -14.84 (+/- 9.97)
+MeanAbsoluteError Train: 0.247628868501
+MeanAbsoluteError Test: 1.64235159831
+
+
+
+---------------------------------------------------------------------------------------------------------
+Alexey's New Dataset = Features: 87 (Length, bases freq, 2mers, 3mers, Summation of Esets.)  !!!!!!!!!!
+
+Cross Validation Linear Scores [ -14.30721819 -216.28299427 -117.09263977 -360.47843581   -6.70311631]
+Accuracy: -142.97 (+/- 133.02)
+MeanAbsoluteError Train: 0.375172123014
+MeanAbsoluteError Test: 1.71164217989
+
+Random Forest Scores [-10.66291835 -22.4708228   -6.83509483 -16.20906435  -4.40021256]
+Accuracy: -12.12 (+/- 6.53)
+MeanAbsoluteError Train: 0.217943896926
+MeanAbsoluteError Test: 1.66456415479
+
+FEature Selection and SVR scores  [  -74.1145533  -2644.42114554  -826.37084021  -270.75536372    -5.24155065]
+Accuracy: -764.18 (+/- 983.34)
+MeanAbsoluteError Train: 0.4967381579
+MeanAbsoluteError Test: 1.70110672915
+
+---------------------------------------
+From Alexeys New DataSet: Those are my informative features...not so informative
+
+get_params {'k': 10, 'score_func': <function f_regression at 0x2f96320>}
+getSupport [ 4  9 16 26 33 38 41 43 64 80]
+slctKbest.scores_ [  6.42331967e+00   4.30748216e+00   9.66604876e-01   2.55979312e+00
+   1.08242858e+01   9.15486358e+00   4.15403709e+00   2.39056146e+00
+   3.15439696e+00   2.47837887e+01   6.75010057e+00   9.06861863e-02
+   4.42864128e+00   1.80582809e+00   4.42676425e+00   2.91338280e+00
+   1.26476388e+01   3.42324767e-02   1.55467320e+00   6.43519871e-01
+   5.13407610e+00   2.58223892e+00   1.74355480e+00   1.85452697e+00
+   1.83091676e+00   3.76755554e+00   1.50231091e+01   6.75379315e+00
+   3.57589174e-01   7.46894673e+00   3.77768103e+00   5.02025495e+00
+   3.27093491e-03   1.14498918e+01   4.20947003e-02   2.38165438e-01
+   6.17967803e-02   3.49978102e+00   1.49989167e+01   1.76190778e+00
+   2.51234294e+00   9.70906109e+00   7.05725308e-01   1.57970819e+01
+   6.39662210e+00   2.62700881e+00   4.88201081e+00   9.00693565e-01
+   1.53964979e+00   3.66993299e+00   7.44725015e-01   2.14710055e-01
+   3.97534891e+00   4.17874728e-01   2.32167043e+00   3.56940009e-01
+   2.81156218e-01   7.16970567e-01   3.71724218e+00   4.09416371e-01
+   2.56788867e-08   2.69592351e-02   1.06938219e+00   1.62246293e-01
+   1.13550565e+01   5.83791119e+00   2.03255174e+00   1.46312184e-04
+   9.23314055e+00   3.00726366e+00   6.25631973e+00   1.38310745e-02
+   1.58323009e-01   2.93224594e+00   8.41030438e-02   4.77480335e+00
+   3.18392252e+00   1.74369571e+00   2.46089897e-01   2.13408217e+00
+   9.59265239e+00   1.84401038e-01   5.29169462e+00   1.50434580e+00
+   5.43695505e-01]
+slctKbest.pvalues_ [  1.13056461e-02   3.80167232e-02   3.25595186e-01   1.09701660e-01
+   1.01152761e-03   2.49831284e-03   4.16091478e-02   1.22158664e-01
+   7.58080601e-02   6.71773001e-07   9.41287662e-03   7.63324205e-01
+   3.54105635e-02   1.79095139e-01   3.54494793e-02   8.79346432e-02
+   3.80937071e-04   8.53223726e-01   2.12528901e-01   4.22492613e-01
+   2.35203730e-02   1.08157391e-01   1.86773923e-01   1.73343965e-01
+   1.76105219e-01   5.23347770e-02   1.08117081e-04   9.39345408e-03
+   5.49886243e-01   6.30823778e-03   5.20193018e-02   2.51139158e-02
+   9.54395391e-01   7.22710613e-04   8.37451092e-01   6.25564338e-01
+   8.03692607e-01   6.14589225e-02   1.09506063e-04   1.84471849e-01
+   1.13046699e-01   1.84821960e-03   4.00922983e-01   7.19097386e-05
+   1.14766009e-02   1.05148030e-01   2.72014139e-02   3.42660229e-01
+   2.14751703e-01   5.54824300e-02   3.88209610e-01   6.43128820e-01
+   4.62470529e-02   5.18041094e-01   1.27671774e-01   5.50248605e-01
+   5.95977460e-01   3.97196335e-01   5.39326966e-02   5.22307055e-01
+   9.99872151e-01   8.69588787e-01   3.01155278e-01   6.87120960e-01
+   7.60436979e-04   1.57344437e-02   1.54049593e-01   9.90349736e-01
+   2.39399534e-03   8.29786799e-02   1.24196741e-02   9.06386811e-01
+   6.90729056e-01   8.69137100e-02   7.71829113e-01   2.89441176e-02
+   7.44511478e-02   1.86756122e-01   6.19872483e-01   1.44144912e-01
+   1.96879214e-03   6.67644010e-01   2.14849160e-02   2.20085014e-01
+   4.60953806e-01]
+   
+__________________________________________________________________________________________________________________
+RNAfold --MEA -d2 --noconv < mySecsCiandrini.fa > mySecsCiandrini.txt
+RNAfold --MEA -d2 --noconv < mySecsAlexey.fa > Stress/mySecsNewDataSet.txt
+
+cat Ciandrini/mfesciandrini.txt | grep -P -o '\(\s*-?\d+\.\d+\)' > Ciandrini/mfe.txt
+cat Stress/mySecsNewDataSet.txt | grep -P -o '\(\s*-?\d+\.\d+\)' > Stress/mfesalexey.txt
+
+Predicting MFE from initiation rates + length + 4 primers + summations
+Cross Validation Linear Scores [ 0.7593049   0.82546364  0.85017151  0.87476222  0.88769798]
+Accuracy: 0.84 (+/- 0.05)
+MeanAbsoluteError Train: 0.215264238441
+MeanAbsoluteError Test: 0.299139018094
+Random Forest Scores [ 0.98357944  0.97302969  0.97798984  0.97868081  0.98472752]
+Accuracy: 0.98 (+/- 0.00)
+MeanAbsoluteError Train: 0.030288401656
+MeanAbsoluteError Test: 0.0907687347316
+###################################################
+
+CORRECT DATA CIandrini
+
+Cross Validation Linear Scores [ 0.03438852  0.02698255  0.06020212  0.04600511 -0.06554569]
+Accuracy: 0.02 (+/- 0.04)
+MeanAbsoluteError Train: 0.496693733296
+MeanAbsoluteError Test: 0.62544214599
+
+Random Forest Scores [ 0.06741911  0.06651637  0.08384232  0.05179707 -0.02515762]
+Accuracy: 0.05 (+/- 0.04)
+MeanAbsoluteError Train: 0.656343756654
+MeanAbsoluteError Test: 0.654160196198
+
+For Alexey's data
+
+Cross Validation Linear Scores [ 0.01243317  0.00630554 -0.00026837  0.01136212 -0.01193573]
+Accuracy: 0.00 (+/- 0.01)
+MeanAbsoluteError Train: 0.558389027365
+MeanAbsoluteError Test: 0.565812802049
+Random Forest Scores [ 0.04953166  0.08124647  0.05317826  0.07054048 -0.00470779]
+Accuracy: 0.05 (+/- 0.03)
+MeanAbsoluteError Train: 0.716501257525
+MeanAbsoluteError Test: 0.651124211446
+
+
+For Ciandrini:
+
+maxValue for bases freq [ 4.76052835  5.05513381  8.82838953  9.5862983 ]
+minValue for bases freq [-2.38761463 -2.42607629 -1.82486289 -1.96896524]
+[28722:28722:0319/132018:ERROR:nss_util.cc(819)] After loading Root Certs, loaded==false: NSS error code: -8018
+Created new window in existing browser session.
+maxValue for 2 mers freq [ 15.10061611  19.19004001   6.90955127   7.36662819  18.3363867
+  15.61457621   6.46217053  11.15354484  22.90476583  11.04610316
+   9.08740027  12.98060689  19.60581546  10.41071119  12.6358836
+  18.16823843]
+minValue for 2 mers freq [-1.46215271 -1.81803417 -1.45643785 -1.37019882 -1.83447579 -1.46350385
+ -1.29356969 -1.32196192 -1.30069466 -1.31889389 -0.95511217 -1.16673001
+ -1.22208812 -1.37523002 -0.98240277 -0.9145567 ]
+[28787:28787:0319/132020:ERROR:nss_util.cc(819)] After loading Root Certs, loaded==false: NSS error code: -8018
+Created new window in existing browser session.
+maxValue for 3 mers freq [ 27.57984202  16.57066248   8.92932175  20.60050552  16.1114653
+  12.24636027  13.18433355  11.78104578  15.99051166  23.63865822
+  14.44516567  14.25886268  19.18878241  15.57957056  17.03824129
+  21.4386523   31.4317667   17.54173235  24.76709857  11.73090482
+  17.03343314  29.53197143  11.73057683  31.22035024  15.27740813
+  20.22688047  15.05412084  26.18003602  17.03889264  13.39097182
+  13.94955903  47.59406707  13.0928417   40.44047729  15.6261154
+  14.64311748  40.24984005  35.75168599   9.23682055  14.47779559
+  10.83425446  15.92222813  14.68880536  23.63767539  23.76728139
+  13.58915723  16.49373615  14.67544852  16.55351699  36.77391773
+  14.34663507  18.15053987  41.95217768  11.81918868  25.72363134
+  19.7648814   29.90338332  13.23879932  31.55842237  21.14772569
+  18.92270862  45.54304899  18.68577041  23.5176511 ]
+minValue for 3 mers freq [-0.87422282 -1.01283633 -0.89356006 -0.79796168 -0.99287543 -1.12262972
+ -0.61069381 -0.71090227 -0.81574002 -0.80087768 -0.61749988 -0.68102876
+ -0.74456039 -0.81463906 -0.54440222 -0.57332719 -0.90098601 -1.02914437
+ -0.7529069  -0.79483438 -0.98573489 -0.90922115 -0.87048224 -0.70520981
+ -0.77143771 -0.75498364 -0.57039034 -0.60667539 -0.7393511  -0.79588702
+ -0.54336231 -0.4512198  -0.90519416 -0.58454737 -0.59481621 -0.53994379
+ -0.67948267 -0.69495285 -0.59896979 -0.5366983  -0.62932838 -0.56320991
+ -0.40818722 -0.39203302 -0.5774322  -0.64111487 -0.41847715 -0.46983775
+ -0.83056067 -0.44430921 -0.66600503 -0.5594598  -0.65307337 -0.86688972
+ -0.58086054 -0.5540415  -0.47344211 -0.56271833 -0.35879218 -0.39681297
+ -0.57479874 -0.46650416 -0.41455772 -0.36434626]
+
+_____________________________________________________________________________________________________________
+Regression only with the use of Length of the Coding Sequence
+Random Forest Scores: [-0.33362551 -0.24858209 -0.43007726 -0.25749258 -0.2803563 ]
+Accuracy: -0.31 (+/- 0.07)
+MeanAbsoluteError Train: 0.36862612843
+MeanAbsoluteError Test: 0.68226561178
+
+Correlation among Coding's Length and Init Rates
+Pearson :  (0.064099684870279061, 0.00057235329381915754)
+Spearman :  (-0.057987386831311362, 0.0018371955528082992)
+
+
+For Ciandrini's Data
+Correlation among Coding's Length and Init Rates
+Pearson :  (-0.6006510621294564, 0.0)    Correlation Coefficient, P-value
+Spearman :  (-0.6084966831887606, 0.0)
+
+Random Forest Scores: [ 0.12041277  0.11363405  0.16346048  0.20469017  0.20264317]
+Accuracy: 0.16 (+/- 0.04): allScores.mean(), allScores.std()
+MeanAbsoluteError Train: 0.294276849736
+MeanAbsoluteError Test: 0.484455818769
+
+_______________________________________________________________________________________________________
+30-4-2015
+        Today i made a backup of the code cause from now on i dont want to use the whole length of the 5utr
+        but only the 100bp upstream.
+        #  ------------------------|--coding sequence---
+        #                ^^^^^^^^^^|^^^^^
+        #                  100bp   |40bp
+01-05-2015
+        I made a combined plot of the Initiation Rates of the 2 datasests: InitRatesAlexeyCiandrini.png
+07-05-2015
+        I have found that there are no genes from the 17th chromosome (chrmt) in any of the 2 datasets. Named: Q0...
+        Alexey's 
+        featureArray(3562, 89)
+11-05-2015
+        Correlation of the 2 Datasets: pearsonr(alexeysRates, ciandrinisRates)
+        (0.38366855768291991, 2.3924056993085302e-125) (is on true values and depicts linear relationships.)
+        Spearman: (0.45614094915845355, 1.0789249569206569e-182) ( is computed on ranks and so depicts monotonic relationships)
+[Things to write in the paper: Generation of Features(Mathematics, example), Pearson vs Spearman, Error R^2 and MSE]
+        featureArray(3562, 89)
+12-05-2015
+        ~~in the EftychiaParseGff3.py~~
+        Everything is saved in actualArray
+        Sorted by Init Rates is called sortedArray
+        featureArray is all the features + InitRates without the Sequences
+
+        I am interested in sequences with Init Rates between [-12, -9]
+        that gives me 3409 sequences (Alexeys db): InitRatesAlexeyThreshold.png
+
+        ThresholdedIntRates/Conditional Entropy
+        the direction is 3--->5 that means that the first 40pb are coding sequence
+
+    Scores for Alexey, sorted sequences [100bp + 40bp] and InitRates[-12,-9]: 3409
+    Per Chromosome, 87 features, Stratified Cross Validation with the use of the 10 classes
+    n_folds=3 : Result: ThresholdedIntRates/output1.txt
+    5 Fold Cross vaidation: ThresholdedIntRates/output2.txt
+    3 Fold Cross vaidation: ThresholdedIntRates/output3.txt
+15-05-2015
+        autophagy:The process by which cells digest parts of their own cytoplasm; allows for both recycling of macromolecular constituents under conditions of cellular stress and remodeling the intracellular structure for cell differentiation.
+Children of Gene Ontology Term: response to stress : biological process GO:0006950
+cellular response to stress • defense response • multicellular organismal response to stress • muscle hypertrophy in response to stress • phage shock • regulation of response to stress • response to anoxia • response to cold • response to flooding • response to fluid shear stress • response to heat • response to herbicide • response to hydrostatic pressure • response to hyperoxia • response to hypoxia • response to immobilization stress • response to ischemia • response to isolation stress • response to nitrosative stress • response to osmotic stress • response to oxidative stress • response to starvation • response to sterol depletion • response to topologically incorrect protein • response to water deprivation • response to wounding • stress response to acid chemical • stress response to metal ion
+GO:0051409 response to nitrosative stress
+GO:0006979 response to oxidative stress
+GO:0006991 response to sterol depletion
+GO:0009409 response to cold
+GO:0009413 response to flooding
+GO:0009414 response to water deprivation
+GO:0009635 response to herbicide
+GO:0009611 response to wounding
+GO:0001666 response to hypoxia
+GO:0009408 response to heat
+GO:0009271 phage shock
+GO:0051599 response to hydrostatic pressure
+GO:0003299 muscle hypertrophy in response to stress
+GO:0006970 response to osmotic stress
+GO:0042594 response to starvation
+GO:0034059 response to anoxia
+GO:0033554 cellular response to stress
+GO:0033555 multicellular organismal response to stress
+GO:0080134 regulation of response to stress
+GO:0006952 defense response
+GO:0097501 stress response to metal ion
+GO:0034405 response to fluid shear stress
+GO:0055093 response to hyperoxia
+GO:0097532 stress response to acid chemical
+GO:0002931 response to ischemia
+GO:0070413 trehalose metabolism in response to stress
+GO:0035966 response to topologically incorrect protein
+GO:0010610 regulation of mRNA stability involved in response to stress
+GO:0035900 response to isolation stress
+GO:0035902 response to immobilization stress
+http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0006950#term=history&info=2
+18-05-2015
+        Cellular stress responses are primarily mediated through what are classified as stress proteins. Stress proteins often are further subdivided into two general categories: those that only are activated by stress, or those that are involved both in stress responses and in normal cellular functioning. The essential character of these stress proteins in promoting the survival of cells has contributed to them being remarkably well conserved across phyla, with nearly identical stress proteins being expressed in the simplest prokaryotic cells as well as the most complex eukaryotic one
+        (heat, toxins)
+19-05-2015
+        http://yeastmine.yeastgenome.org/yeastmine/query.do
+        Yeast Mine --> Query Builder -->
+
+        Gene
+       LOOKUP  Gene names
+       Systematic Name  
+       GO Annotation GO Annotation  collection 
+              Ontology Term Ontology Term  
+                     Identifier 
+
+2-06-2015
+         Stress Biological Process included as class, Correlation calculated
+         41 genes are stress related (39)
+
+         Features: Chromosome, Length, A, T, G, C, 2mers, 3mers, Stress
+
+
+         Random Forest
+          # 100 trees
+          Random Forest Scores: [-1.13296565 -0.03646991  0.14013438 -0.68929083 -0.42508291]
+          Accuracy: -0.43 (+/- 0.46)
+          MeanAbsoluteError Train: 0.184492443228
+          MeanAbsoluteError Test: 0.60144373579
+
+
+          # 4000 trees
+
+          Random Forest Scores: [ -1.12122686e+00  -1.42168478e-02  -9.95136857e-04  -5.57742721e-01 -4.34251010e-01]
+          Accuracy: -0.43 (+/- 0.41)
+          MeanAbsoluteError Train: 0.188822337481
+          MeanAbsoluteError Test: 0.595956965492
+
+
+
+        SVR
+          #Linear
+        SVR Scores: [-1.75487302 -0.15081938 -0.21861444 -2.10914272 -0.50355376]
+        Accuracy: -0.95 (+/- 0.82)
+        MeanAbsoluteError Train: 0.433796482397
+        MeanAbsoluteError Test: 0.590532110418
+
+          #RBF
+          SVR RBF Scores: [-2.37341924 -0.06051628 -0.41003723 -1.19477345 -0.28786707]
+          Accuracy: -0.87 (+/- 0.85)
+          MeanAbsoluteError Train: 0.340376109691
+          MeanAbsoluteError Test: 0.57528299524
+
+03-06-2015
+      Using Stress for Cross Validation Used Stratified CV, only in this one I can use array as argument
+
+    #  Not used as feature
+      SVR Linear Scores: [-0.440012   -0.78864506 -0.31960606  0.05766443 -0.67866551]
+      Accuracy: -0.43 (+/- 0.30)
+      MeanAbsoluteError Train: 0.470137598561
+      MeanAbsoluteError Test: 0.564485060864
+
+      Random Forest Scores: [-1.26014462 -0.11467645 -0.22494477 -0.30229706 -0.26640733]
+      Accuracy: -0.43 (+/- 0.42)
+      MeanAbsoluteError Train: 0.20175351091
+      MeanAbsoluteError Test: 0.465984715653
+
+
+     # Used as feature
+      SVR Linear Scores: [-1.63167789 -0.9008912  -0.47847756  0.08240734 -0.31236649]
+      Accuracy: -0.65 (+/- 0.58)
+      MeanAbsoluteError Train: 0.46787256757
+      MeanAbsoluteError Test: 0.43347262772
+
+      Random Forest Scores: [-1.2627638  -0.1081189  -0.22704856 -0.32536649 -0.26788911]
+      Accuracy: -0.44 (+/- 0.42)
+      MeanAbsoluteError Train: 0.202248869983
+      MeanAbsoluteError Test: 0.464983182537
+
+05-06-2015
+      Put quotes at the beginning of a file with Terminal
+      sed ./AllGoTermsStress.txt -i -e 's|\(.*\)|"\1|g'
+      Print the whole array without ...
+        np.set_printoptions(threshold='nan')
+
+10-06-2015
+      
+      Positive Score!! Added as feature Stress Go terms (how many a gene has)
+      Random Forest Scores: [ 0.05015833  0.02788627  0.02027425  0.06893751 -0.00610394]
+      Accuracy: 0.03 (+/- 0.03)
+      MeanAbsoluteError Train: 0.180449914148
+      MeanAbsoluteError Test: 0.507280679501
+11-06-2015
+
+      Same Regression 
+        Random Forest Scores: [ 0.04957709  0.03011027  0.01542749  0.07238194 -0.00505713]
+        Accuracy: 0.03 (+/- 0.03)
+        MeanAbsoluteError Train: 0.180547790494
+        MeanAbsoluteError Test: 0.506991978191
+
+      Make a nice subplot
+
+    for i in range(len(Features.T)): #per column.
+      pC = scipy.stats.pearsonr(Features[:,i], Target)
+      pearsonsCorrelations.append(pC)
+      # print pC
+      sC = scipy.stats.spearmanr(Features[:,i], Target)
+      spearmanCorrelations.append(sC)
+      # print sC
+
+    pearsonsCorrelations = np.array(pearsonsCorrelations)
+    spearmanCorrelations = np.array(spearmanCorrelations)
+    # print "pearsonsCorrelations", pearsonsCorrelations.shape
+    # print "spearmanCorrelations", spearmanCorrelations.shape
+
+    h = pearsonsCorrelations[:,0] # Pearson correlation coefficient
+    z = spearmanCorrelations[:,0] # Spearman
+    x = np.arange(len(Features.T)) # Features
+    p = pearsonsCorrelations[:,1] # Pearson P values
+    q = spearmanCorrelations[:,1] # Spearman P values
+
+    plt.clf()
+    ind = np.arange(len(Features.T)) #width of a bar
+    f, (ax1, ax2) = plt.subplots(2, sharex = True, figsize=(25,15))
+    f.tight_layout()
+    ax1.bar(ind, h, color='g', alpha=0.5, linewidth=0)
+    ax1.bar(ind, z, color='r', alpha=0.5, linewidth=0)
+    ax1.set_xticks(np.arange(len(Features.T)))
+    ax1.grid()
+    ax2.bar(ind, p, color='g', alpha=0.5, linewidth=0)
+    ax2.bar(ind, q, color='r', alpha=0.5, linewidth=0)
+    ax2.set_title('P value')
+    ax2.set_xticks(np.arange(len(Features.T)))
+    ax2.grid()
+    f.suptitle('Feature Correlation at fold')
+    f.savefig('Corr-Pvalue-Test.svg')
+
+16-06-2015
+
+# ALL Feautres Stress included.
+Random Forest Scores: [ 0.04826751  0.02953246  0.02092101  0.06984509 -0.00074648]
+Accuracy: 0.03 (+/- 0.02)
+MeanAbsoluteError Train: 0.180580666284
+MeanAbsoluteError Test: 0.505241649634
+
+
+Pre selected Features
+
+Random Forest Scores: [ 0.04503478  0.01913318  0.02059739  0.06788154  0.01121544]
+Accuracy: 0.03 (+/- 0.02)
+MeanAbsoluteError Train: 0.180490492676
+MeanAbsoluteError Test: 0.501215477786
+
+
+Selected Features for Alexey with Correlation higher than 0.04
+selectedFeats [6, 10, 16, 24, 25, 28, 32, 46, 51, 59, 62, 64, 65, 66, 70, 71, 74, 80, 82, 85, 86, 87, 88, 89, 90, 91]
+
+Scores including all features (plus extra 4)
+
+Random Forest Scores: [ 0.44308484  0.41039914  0.38041101  0.44104874  0.38177149]
+Accuracy: 0.41 (+/- 0.03)
+MeanAbsoluteError Train: 0.136214103558
+MeanAbsoluteError Test: 0.387910275597
+
+15-07-2015
+Average Fitness is Fitness/No of Segments
+this is the last column as feature, according to which is done Gene Selection
+
+'{0:.10f}'.format(a)  In order not to print the floats in exponential
+
+16-07-2015
+Gene Selection
+THreshold = 0
+geneSelection (3024, 94)
+not selected genes 385
+
+Scores including the extra 4numbers.
+Random Forest Scores: [ 0.46594994  0.44854084  0.46952843  0.46846021  0.42214032]
+Accuracy: 0.45 (+/- 0.02)
+MeanAbsoluteError Train: 0.125938562724
+MeanAbsoluteError Test: 0.357875739846
+
+Gene Selection without the 4 numbers.
+Random Forest Scores: [ 0.05427407  0.05091937  0.0421542   0.06479841  0.01405089]
+Accuracy: 0.05 (+/- 0.02)
+MeanAbsoluteError Train: 0.174129105165
+MeanAbsoluteError Test: 0.484074669942
+
+Pick the 10% High
+THreshold = np.percentile(featureArray[:,-2],90 5.17729333334
+
+geneSelection (341, 94)
+not selected genes 3068
+Random Forest Scores: [ 0.02189791 -0.08732769  0.0244026  -0.06273876  0.00446883]
+Accuracy: -0.02 (+/- 0.05)
+MeanAbsoluteError Train: 0.169440225127
+MeanAbsoluteError Test: 0.403872094632
+
+28-07-2015
+
+Sliding Window Regression for Gritsenko
+Random Forest Scores: [ 0.02903095  0.01811886  0.01516476  0.0359945  -0.01000594]
+Accuracy: 0.02 (+/- 0.02)
+MeanAbsoluteError Train: 0.183841000752
+MeanAbsoluteError Test: 0.50959775296
+
+
+('clf.coef_', array([-0.,  0., -0.,  0.,  0.,  0., -0., -0., -0.,  0.,  0., -0.,  0.,
+        0., -0.,  0., -0., -0., -0., -0.,  0., -0., -0., -0.,  0., -0.,
+        0.,  0.,  0.,  0., -0.,  0.,  0.,  0.,  0., -0.,  0.,  0.,  0.,
+        0.,  0., -0., -0., -0.,  0., -0., -0., -0.,  0.,  0., -0.,  0.,
+       -0., -0.,  0., -0.,  0.,  0., -0., -0.,  0., -0.,  0.,  0.,  0.,
+        0., -0., -0.,  0.,  0., -0., -0., -0., -0., -0., -0.,  0., -0.,
+        0.,  0.,  0., -0., -0.,  0., -0.,  0.,  0.,  0.,  0.,  0.,  0.,
+       -0.,  0., -0., -0., -0., -0.,  0.,  0., -0., -0.,  0.,  0., -0.,
+        0.,  0.,  0., -0.,  0.,  0.,  0.,  0.,  0.,  0.,  0., -0.,  0.,
+        0., -0., -0., -0., -0.,  0., -0., -0., -0., -0.,  0.,  0.,  0.,
+        0., -0., -0.,  0.,  0.,  0., -0.,  0.,  0., -0.,  0.,  0.,  0.,
+       -0.,  0.,  0.,  0.,  0., -0., -0., -0., -0., -0., -0., -0.,  0.,
+        0., -0., -0., -0.,  0., -0., -0.,  0., -0.,  0., -0.,  0.,  0.,
+       -0.,  0., -0.,  0., -0., -0.,  0.,  0., -0.,  0., -0., -0.,  0.,
+        0.,  0., -0.,  0.,  0.,  0., -0., -0.,  0.,  0.,  0., -0., -0.,
+        0.,  0.,  0.,  0., -0.,  0.,  0., -0., -0.,  0., -0.,  0., -0.,
+        0.,  0., -0.,  0.,  0.,  0., -0., -0., -0.,  0., -0.,  0.,  0.,
+       -0.,  0., -0., -0., -0., -0.,  0.,  0.,  0., -0., -0., -0.,  0.,
+       -0.,  0.,  0., -0., -0.,  0.,  0., -0., -0.,  0.,  0.,  0.,  0.,
+        0., -0.,  0.,  0.,  0.,  0., -0.,  0.,  0., -0.,  0.,  0., -0.,
+        0., -0.,  0.,  0.,  0., -0., -0., -0.,  0., -0., -0.,  0.,  0.,
+        0.,  0., -0.,  0., -0.,  0.,  0., -0.,  0., -0.,  0.,  0.,  0.,
+        0.,  0., -0., -0.,  0.,  0.,  0.,  0., -0.,  0.,  0., -0.,  0.,
+        0.,  0., -0.,  0.,  0.,  0.,  0.,  0., -0.,  0.,  0., -0., -0.,
+       -0., -0.,  0.,  0.,  0.,  0.,  0.,  0., -0., -0., -0.,  0.,  0.,
+        0.,  0., -0.,  0.,  0.,  0.,  0., -0.,  0.,  0.,  0.,  0., -0.,
+       -0.,  0., -0., -0.,  0.,  0., -0., -0.,  0.,  0., -0.,  0., -0.,
+        0., -0., -0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0., -0.,
+        0., -0.,  0., -0.,  0.,  0.,  0., -0.,  0.,  0.,  0.,  0., -0.,
+       -0.,  0.,  0., -0.,  0.,  0., -0., -0., -0., -0.,  0., -0., -0.,
+        0.,  0.,  0.,  0.,  0., -0.,  0.,  0., -0., -0., -0.,  0.,  0.,
+       -0., -0., -0.,  0., -0.,  0.,  0.,  0., -0., -0., -0., -0., -0.,
+       -0.,  0.,  0., -0.,  0.,  0.,  0.,  0.,  0.,  0., -0.,  0., -0.,
+        0.,  0.,  0., -0., -0., -0., -0.,  0., -0., -0., -0., -0.,  0.,
+       -0., -0.,  0., -0.,  0.,  0.,  0.,  0.,  0.,  0., -0., -0., -0.,
+       -0.,  0., -0., -0., -0., -0., -0., -0., -0., -0.,  0., -0., -0.,
+       -0., -0., -0., -0.,  0., -0.,  0., -0., -0., -0., -0., -0., -0.,
+       -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0.,
+       -0., -0., -0., -0., -0., -0.,  0., -0., -0., -0., -0., -0., -0.]))
+('intercept_', -10.598036079798591)
+End of Fold 5
+Random Forest Scores: [-0.00800002 -0.01248024 -0.01338545 -0.00426516 -0.06461535]
+Accuracy: -0.02 (+/- 0.02)
+MeanAbsoluteError Train: 0.506114686042
+MeanAbsoluteError Test: 0.526379542289
+
+
+29-07-2015
+    1) all 1600 features
+    Lasso Scores: [-0.00800002 -0.01248024 -0.01338545 -0.00426516 -0.06461535]
+    Accuracy: -0.02 (+/- 0.02)
+    MeanAbsoluteError Train: 0.506114686042
+    MeanAbsoluteError Test: 0.526379542289
+
+    2) 4FeatsWindow10 Overlap3
+    Lasso Scores: [-0.00800002 -0.01248024 -0.01338545 -0.00426516 -0.06461535]
+    Accuracy: -0.02 (+/- 0.02)
+    MeanAbsoluteError Train: 0.506114686042
+    MeanAbsoluteError Test: 0.526379542289
+
+    3) 4Feats window 20 Oevrlap 10
+    Again all Coefficients are 0
+    Lasso Scores: [-0.00800002 -0.01248024 -0.01338545 -0.00426516 -0.06461535]
+    Accuracy: -0.02 (+/- 0.02)
+    MeanAbsoluteError Train: 0.506114686042
+    MeanAbsoluteError Test: 0.526379542289
+
+    4) 4 Feats window 30 overlap 10
+    Lasso Scores: [-0.00800002 -0.01248024 -0.01338545 -0.00426516 -0.06461535]
+    Accuracy: -0.02 (+/- 0.02)
+    MeanAbsoluteError Train: 0.506114686042
+    MeanAbsoluteError Test: 0.526379542289
+
+    5)  4Feats window 20 Oevrlap 10 α=0.001
+    Lasso Scores: [-0.00395506 -0.00848394 -0.0096502  -0.00013249 -0.06073888]
+    Accuracy: -0.02 (+/- 0.02)
+    MeanAbsoluteError Train: 0.505545714443
+    MeanAbsoluteError Test: 0.525319368369
+
+
+    6) Random Forest only the 4 Frequencies window 10 overlap 7
+    rndmForest Scores: [-0.10570443 -0.0059291  -0.04599565 -0.08175094 -0.08933579]
+    Accuracy: -0.07 (+/- 0.04)
+    MeanAbsoluteError Train: 0.190489710104
+    MeanAbsoluteError Test: 0.527216234588
+
+    Overlap 3
+    rndmForest Scores: [-0.10630355 -0.00072195 -0.04565982 -0.08332117 -0.08996386]
+    Accuracy: -0.07 (+/- 0.04)
+    MeanAbsoluteError Train: 0.190593798212
+    MeanAbsoluteError Test: 0.526591342717
+
+
+30-07-2015
+
+Lasso 84 Features(plus 4) Window size 9, alpha=0.0001
+Lasso Scores: [-0.00232594  0.00754822  0.00250944  0.00238502 -0.04006988]
+Accuracy: -0.01 (+/- 0.02)
+MeanAbsoluteError Train: 0.50258124408
+MeanAbsoluteError Test: 0.519250062089
+
+Fold 5 
+('intercept_', -10.671655504442981)
+score:  -0.0400698791153
+1
+3
+
+Fold4
+('intercept_', -10.710943851438934)
+score:  0.00238501639396
+0
+1
+2
+3
+
+Fold 3
+('intercept_', -10.745573298313863)
+score:  0.00250944320218
+0
+1
+3
+
+Fold 2
+('intercept_', -10.719467124862142)
+score:  0.00754821590644
+1
+3
+
+Fold 1
+('intercept_', -10.717358485511784)
+score:  -0.00232594010573
+1
+3
+
+
+1-8-2015
+      alpha=0.0000000001, Lasso
+
+      Lasso Scores: [-0.00368531  0.00909936  0.00130668 -0.00212399 -0.03884237]
+      Accuracy: -0.01 (+/- 0.02)
+      MeanAbsoluteError Train: 0.50247528741
+      MeanAbsoluteError Test: 0.519260860321
+
+4-8-2015
+
+      GradientBoostingRegressor Scores: [-0.19096361 -0.08710241 -0.16103762 -0.16155262 -0.19474181]
+      Accuracy: -0.16 (+/- 0.04)
+      MeanAbsoluteError Train: 0.299010676187
+      MeanAbsoluteError Test: 0.547016498172
+
+Changed the MFE
+GradientBoostingRegressor Scores: [-0.1910647  -0.14501747 -0.21047293 -0.17266544 -0.22380228]
+Accuracy: -0.19 (+/- 0.03)
+MeanAbsoluteError Train: 0.310326578481
+MeanAbsoluteError Test: 0.551580595356
+
+Gradient Boosting
+with correct values !!!!
+
+GradientBoostingRegressor Scores: [-0.09070682 -0.01557843 -0.06385069 -0.03193032 -0.13383929]
+Accuracy: -0.07 (+/- 0.04)
+MeanAbsoluteError Train: 0.156530895037
+MeanAbsoluteError Test: 0.53111349502
+
+Lasso Scores: [-1.91370028 -1.84834822 -1.97013889 -1.51328526 -2.38994366]
+Accuracy: -1.93 (+/- 0.28)
+MeanAbsoluteError Train: 0.000264367230699
+MeanAbsoluteError Test: 0.896078851152
+
+
+Lasso with alpha = 0.0001
+Lasso Scores: [-0.06162795 -0.0905661  -0.09732599 -0.09606451 -0.13956191]
+Accuracy: -0.10 (+/- 0.02)
+MeanAbsoluteError Train: 0.427495402671
+MeanAbsoluteError Test: 0.532876846833
+
+1,12,32,40,42,46,49,50,53,55,58,61,65,66,67,72,74,83,87,95,97,108,111,113,115,117,120,121,123,124,125,131,141,146,157,160,164,169,171,185,195,198,206,225,228,231,234,235,240,243,250,253,278,285,291,293,294,299,300,310,314,321,332,335,336,339,350,352,361,371,378,392,395,399,404,408,412,415,422,433,436,437,443,444,446,460,463,469,471,472,485,486,488,500,503,514,528,537,539,542,546,550,551,552,553,555,558,559,576,581,586,595,606,612,626,645,670,675,685,697,702,703,709,713,718,735,739,747,750,755,773,791,807,825,827,828,840,864,869,886,890,894,899,900,907,908,912,913,915,916,919,921,922,923,925,926,952,956,961,962,963,967,968,969,977,983,990,994,1018,1020,1028,1038,1059,1060,1061,1064,1071,1073,1080,1081,1084,1085,1095,1098,1103,1119,1121,1123,1131,1153,1154,1162,1168,1174,1184,1202,1210,1222,1225,1226,1231,1232,1233,1242,1249,1252,1258,1285,1288,1296,1302,1310,1327,1334,1341,1344,1347,1360,1362,1368,1372,1376,1385,1386,1407,1416,1424,1437,1441,1459,1462,1465,1467,1468,1473,1476,1495,1496,1497,1502,1503,1510,1512,1514,1524,1536,1541,1550,1564,1566,1570,1576,1583,1585,1590,1626,1635,1636,1639,1645,1647,1651,1652,1661,1662,1663,1666,1680,1681,1708,1710,1713,1723,1732,1734,1741,1742,1743,1745,1756,1759,1761,1767,1791,1799,1801,1804,1811,1823,1824,1828,1830,1833,1834,1839,1847,1860,1862,1866,1885,1893,1899,1902,1910,1915,1926,1929,1933,1956,1963,1968,1976,1987,1990,1997,2007,2010,2039,2043,2054,2067,2070,2071,2079,2080,2081,2085,2097,2101,2112,2129,2134,2139,2140,2146,2155,2158,2160,2168,2172,2173,2174,2176,2178,2179,2183,2186,2193,2194,2206,2215,2216,2218,2222,2223,2226,2235,2243,2245,2246,2255,2260,2263,2264,2270,2279,2297,2300,2302,2303,2310,2311,2315,2316,2321,2322,2323,2327,2331,2332,2333,2343,2349,2354,2374,2382,2387,2396,2406,2409,2410,2412,2415,2424,2428,2432,2434,2448,2455,2459,2460,2468,2472,2476,2482,2484,2485,2489,2490,2491,2492,2503,2509,2514,2515,2516,2518,2535,2548,2549,2557,2559,2562,2564,2577,2579,2588,2598,2602,2607,2628,2631,2637,2638,2655,2656,2669,2670,2678,2681,2687,2689,2712,2716,2722,2725,2726,2732,2733,2741,2743,2749,2750,2758,2759,2763,2765,2767,2769,2771,2774,2871,2876,3039,3043,3082,3097,3201,3207,3213,3248,3289,3315,3324,3369,3401,3418,3459,3532,3535,3539,3581,3757,3840,3870,3888,3894,3959,3963,4043,4055,4126,4457,4467,4540,4544,4631,4881,5044,5130,5216,5380,5466,5970,6878,7235,8408,9165,9260,9502,9583,9917,10594,11020
+
+
+######################################################################################################################################################
+Feature Selection of feats with Spearman > 0.1
+
+Random Forest Scores: [-0.05033794 -0.09936168 -0.07692762 -0.0134999  -0.08161763]
+Accuracy: -0.06 (+/- 0.03)
+MeanAbsoluteError Train: 0.42506575044
+MeanAbsoluteError Test: 0.524842422514
+
+Gradient Boosting Scores: [-0.02956933 -0.07278882 -0.05654878  0.00370417 -0.10178043]
+Accuracy: -0.05 (+/- 0.04)
+MeanAbsoluteError Train: 0.452879482117
+MeanAbsoluteError Test: 0.527464361246
+
+###################
+# Alexey - 3409   #
+# Ciandrini - 5175#
+###################
+
+
+
+For Ciandrini
+Assigned Stress Terms Per gene
+maxValue 15
+minValue 0
+
+Ciandrini 
+Gradient Boosting Scores: [-0.04593399 -0.0093403   0.02484277 -0.00675555 -0.17738133]
+Accuracy: -0.04 (+/- 0.07)
+MeanAbsoluteError Train: 0.485172071657
+MeanAbsoluteError Test: 0.648149837925
+
+
+Alexey with Feature Selection 604feats - Fixed Error (reverse Seq)
+
+Gradient Boosting Scores: [ 0.04255523  0.02007753  0.02597246  0.04708849 -0.02140597]
+Accuracy: 0.02 (+/- 0.02)
+MeanAbsoluteError Train: 0.200045744908
+MeanAbsoluteError Test: 0.502536849046

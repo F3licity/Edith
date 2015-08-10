@@ -1,0 +1,59 @@
+GO:0006950 Response to Stress
+
+
+
+
+SELECT DISTINCT descendant.acc, descendant.name, descendant.term_type
+FROM
+ term
+ INNER JOIN graph_path ON (term.id=graph_path.term1_id)
+ INNER JOIN term AS descendant ON (descendant.id=graph_path.term2_id)
+WHERE term.acc='GO:0006950' AND distance <> 0 ;
+
+Has Chrildren:
+cellular response to stress • defense response • multicellular organismal response to stress • muscle hypertrophy in response to stress • phage shock • regulation of response to stress • response to anoxia • response to cold • response to flooding • response to fluid shear stress • response to heat • response to herbicide • response to hydrostatic pressure • response to hyperoxia • response to hypoxia • response to immobilization stress • response to ischemia • response to isolation stress • response to nitrosative stress • response to osmotic stress • response to oxidative stress • response to starvation • response to sterol depletion • response to topologically incorrect protein • response to water deprivation • response to wounding • stress response to acid chemical • stress response to metal ion 
+
+	GO:0033554 cellular response to stress 
+	has Children
+		cellular detoxification of nitrogen compound • cellular response to anoxia • cellular response to cell envelope stress • cellular response to cold • cellular response to DNA damage stimulus • cellular response to fluid shear stress • cellular response to heat • cellular response to hydrostatic pressure • cellular response to hyperoxia • cellular response to hypoxia • cellular response to immobilization stress • cellular response to isolation stress • cellular response to nitrosative stress • cellular response to osmotic stress • cellular response to oxidative stress • cellular response to starvation • cellular response to sterol depletion • cellular response to sugar-phosphate stress • cellular response to topologically incorrect protein • cellular response to water deprivation • cellular senescence • cellular stress response to acid chemical • cellular stress response to acidic pH • defense response by cell wall thickening • DNA protection • intracellular defense response • negative regulation of ribosomal protein gene transcription from RNA polymerase II promoter in response to stress • neuron projection regeneration • plant-type hypersensitive response • regulation of cellular response to stress • regulation of DNA-templated transcription in response to stress • regulation of translation in response to stress • response to endoplasmic reticulum stress • SOS response • stress-activated protein kinase signaling cascade • stress-induced mitochondrial fusion • trehalose catabolic process involved in cellular response to stress • trehalose metabolism in response to stress
+
+
+	GO:0006952 defense response
+	Has children
+		behavioral defense response • cellular defense response • clearance of foreign intracellular DNA • defense response by callose deposition • defense response by callose deposition in cell wall • defense response by cell wall thickening • defense response to other organism • defense response to tumor cell • inflammatory response • innate immune response • negative regulation of defense response • positive regulation of defense response • regulation of defense response • respiratory burst involved in defense response
+
+	GO:0033555 multicellular organismal response to stress
+	has:
+		fear response • general adaptation syndrome • response to pain
+
+	GO:0003299 muscle hypertrophy in response to stress
+	has:
+		GO:0014898 cardiac muscle hypertrophy in response to stress
+			has: more.
+
+	GO:0080134 regulation of response to stress
+	has:
+		regulation of cardiac muscle hypertrophy in response to stress • regulation of cellular response to stress • regulation of defense response • regulation of fear response • regulation of filamentous growth of a population of unicellular organisms in response to heat • regulation of filamentous growth of a population of unicellular organisms in response to starvation • regulation of response to osmotic stress • regulation of response to oxidative stress • regulation of response to water deprivation • regulation of response to wounding • regulation of sorocarp development • regulation of vernalization response
+
+	GO:0034059 response to anoxia
+	has:
+		GO:0090519 anoxia protection 
+		GO:0071454 cellular response to anoxia
+
+	GO:0009409 response to cold
+	has:
+		GO:0070417 cellular response to cold
+			has more
+		GO:0009631 cold acclimation
+		GO:0050826 response to freezing
+			has: GO:0071497 cellular response to freezing
+		GO:0010048 vernalization response
+			has:
+				GO:0010221 negative regulation of vernalization response
+				GO:0010220 positive regulation of vernalization response
+
+	GO:0034405  response to fluid shear stress
+	has:
+		GO:0071498 cellular response to fluid shear stress
+			has:
+				GO:0071499 cellular response to laminar fluid shear stress
