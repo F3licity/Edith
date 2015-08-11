@@ -188,6 +188,8 @@ for i in range(len(featureArray)):
 	# print len(line)
 	forRegression.append(line)
 
+# np.save('allfeaturenames', allfeaturenames)
+# exit()
 forRegression = np.array(forRegression)
 print "forRegression", forRegression.shape
 # print "forRegression", forRegression[0]
@@ -196,7 +198,7 @@ np.save('Ciandrini/forRegression', forRegression)
 forRegression = np.load('Ciandrini/forRegression.npy')
 print "forRegression", forRegression.shape
 
-
+'''
 X = forRegression[:,0:-1].astype(float) #Features
 y = forRegression[:,-1].astype(float) #Target
 
@@ -258,6 +260,7 @@ for i in range(len(spearmanCorrelations)):
 # plt.draw()
 # plt.show()
 
+print "x", x
 
 #plt.savefig(filename)
 
@@ -283,13 +286,16 @@ ax2.set_xticklabels(allfeaturenames[x])
 f.suptitle('Feats with higher Correlation than 0.05')
 f.savefig('Ciandrini/StupidFeatsSelectionSpearman.png')
 
-
+'''
 # plt.show()
 
+# print "forRegression", forRegression[0]
+# exit()
 
+x = [1, 2489, 2530, 2609, 2614, 2653, 2657, 2698, 2702, 2734, 2737, 2741, 2786, 2821, 2870, 2905, 2909, 2989, 3048, 3073, 3135, 3618, 3789, 3873, 3892, 3952, 3957, 3976, 4041, 4060, 4134, 4144, 4204, 4218, 4228, 4266, 4288, 4302, 4312, 4348, 4350, 4386, 4396, 4456, 4480, 4540, 4624, 4683, 4708, 4792, 4851, 4876, 4960, 4992, 6054, 6064, 6138, 6345, 6389, 8645, 9732, 9773, 10012, 10084, 10096, 10138, 10168, 10211, 10336, 10543, 10627, 10636, 10672, 10687, 10891]
 
 # #DO RANDOM FOREST REgression
-X = forRegression[:,:-1].astype(float) #Features
+X = forRegression[:,x].astype(float) #Features
 y = forRegression[:,-1].astype(float) #Target
 
 skf = cross_validation.KFold(len(y),n_folds=5)
@@ -300,8 +306,8 @@ skf = cross_validation.KFold(len(y),n_folds=5)
 
 # doRandmFrstRegression(X, y, skf, saveImageName, correlationImageName)
 
-saveImageName ='Ciandrini/GradientBoosting/GBReg'
-correlationImageName = 'Ciandrini/GradientBoosting/GBReg'
+saveImageName ='Ciandrini/RandomForest/75Feats'
+correlationImageName = 'Ciandrini/RandomForest/75Feats'
 
 #clf = linear_model.Lasso(alpha=0.1, normalize=True)
 
